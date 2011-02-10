@@ -1,0 +1,11 @@
+= DESCRIPTION:
+I had intended to add a whole set of recipes for starting and stopping servers and clients, but then... I found SynergyKM
+
+http://sourceforge.net/projects/synergykm/
+
+= REQUIREMENTS:
+
+= ATTRIBUTES:
+
+= USAGE:
+

@@ -1,0 +1,5 @@
+OSX Opscode Chef cookbooks
+Copyright 2011 Ryan J. Geyer
+
+This product includes software developed by
+Ryan J. Geyer (http://www.ryangeyer.com)

@@ -1,0 +1,72 @@
+{
+  "license": "All rights reserved",
+  "suggestions": {
+  },
+  "dependencies": {
+  },
+  "conflicting": {
+  },
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
+  "description": "Installs/Configures osx",
+  "providing": {
+  },
+  "platforms": {
+  },
+  "version": "0.0.1",
+  "maintainer": "Ryan J. Geyer",
+  "recipes": {
+    "osx::disable_root": "Disables the \"root\" user",
+    "osx::enable_root": "Enables the \"root\" user"
+  },
+  "replacing": {
+  },
+  "maintainer_email": "me@ryangeyer.com",
+  "name": "osx",
+  "groupings": {
+  },
+  "attributes": {
+    "osx/admin_user": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "osx::enable_root",
+        "osx::disable_root"
+      ],
+      "display_name": "OSX Admin User",
+      "description": "The username of a user with administrative privileges"
+    },
+    "osx/admin_pass": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "osx::enable_root",
+        "osx::disable_root"
+      ],
+      "display_name": "OSX Admin Password",
+      "description": "The password of a user with administrative privileges"
+    },
+    "osx/root_password": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "osx::enable_root"
+      ],
+      "display_name": "OSX Root Password",
+      "description": "The password you want to assign to the root account"
+    }
+  },
+  "recommendations": {
+  }
+}

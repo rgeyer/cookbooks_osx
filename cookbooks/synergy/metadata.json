@@ -1,0 +1,33 @@
+{
+  "license": "All rights reserved",
+  "suggestions": {
+  },
+  "dependencies": {
+    "osx": [
+
+    ]
+  },
+  "conflicting": {
+  },
+  "long_description": "= DESCRIPTION:\nI had intended to add a whole set of recipes for starting and stopping servers and clients, but then... I found SynergyKM\n\nhttp://sourceforge.net/projects/synergykm/\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
+  "description": "Installs/Configures synergy",
+  "providing": {
+  },
+  "platforms": {
+  },
+  "version": "0.0.1",
+  "maintainer": "Ryan J. Geyer",
+  "recipes": {
+    "osx::install": "Installs the Synergy binaries"
+  },
+  "replacing": {
+  },
+  "maintainer_email": "me@ryangeyer.com",
+  "name": "synergy",
+  "groupings": {
+  },
+  "attributes": {
+  },
+  "recommendations": {
+  }
+}
