@@ -1,0 +1,47 @@
+{
+  "dependencies": {
+    "osx": ">= 0.0.0"
+  },
+  "name": "textmate",
+  "maintainer_email": "me@ryangeyer.com",
+  "attributes": {
+    "textmate/bundles": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "default": "{\"Ack.tmbundle\": \"git://github.com/protocool/ack-tmbundle.git\",\"RDoc.tmbundle\": \"git://github.com/joshaven/RDoc.tmbundle.git\",\"PHP.tmbundle\": \"git://github.com/textmate/php.tmbundle.git\",\"PHP-Smarty.tmbundle\": \"git://github.com/textmate/php-smarty.tmbundle.git\"}",
+      "type": "string",
+      "recipes": [
+        "textmate::install_bundles",
+        "textmate::default"
+      ],
+      "display_name": "Textmate Bundle Repos",
+      "description": "A json hash of git repositories to checkout as Textmate bundles.  In the form {'<dirname>', '<repo_uri>'}, I.E. {'Ack.tmbundle', 'git://github.com/protocol/ack-tmbundle.git'}"
+    }
+  },
+  "license": "All rights reserved",
+  "suggestions": {
+  },
+  "platforms": {
+  },
+  "maintainer": "Ryan J. Geyer",
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
+  "version": "0.0.1",
+  "recommendations": {
+  },
+  "recipes": {
+    "textmate::default": "Sets up textmate how I like it!",
+    "textmate::install_bundles": "Installs (or updates) a list of bundles based on the textmate/bundles attribute"
+  },
+  "groupings": {
+  },
+  "conflicting": {
+  },
+  "replacing": {
+  },
+  "description": "Installs/Configures textmate",
+  "providing": {
+  }
+}
