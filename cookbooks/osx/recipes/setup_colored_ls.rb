@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: osx
-# Recipe:: default
+# Recipe:: colored_ls
 #
 #  Copyright 2011 Ryan J. Geyer
 #
@@ -16,5 +16,14 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-include_recipe "osx::setup_colored_ls"
-include_recipe "osx::setup_keybindings"
+# TODO: Maybe just append rather than replacing the files?
+
+template ::File.join(ENV['HOME'], '.cshrc') do
+  backup false
+  source "cshrc.erb"
+end
+
+template ::File.join(ENV['HOME'], '.bash_profile') do
+  backup false
+  source "bashrc.erb"
+end

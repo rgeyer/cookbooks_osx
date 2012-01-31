@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: osx
-# Recipe:: default
+# Recipe:: enable_root
 #
 #  Copyright 2011 Ryan J. Geyer
 #
@@ -16,5 +16,6 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-include_recipe "osx::setup_colored_ls"
-include_recipe "osx::setup_keybindings"
+bash "Enable root user" do
+  code "dsenableroot -u #{node[:osx][:admin_user]} -p #{node[:osx][:admin_pass]} -r #{node[:osx][:root_pass]}"
+end

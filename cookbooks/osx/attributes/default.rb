@@ -1,0 +1,1 @@
+default[:osx][:colored_ls] = 'exfxcxdxbxegedabagacad'
