@@ -1,0 +1,142 @@
+{
+  "dependencies": {
+  },
+  "name": "wordpress_tests",
+  "maintainer_email": "me@ryangeyer.com",
+  "attributes": {
+    "wordpress_tests/dbname": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "wordpress_tests::instrument_project"
+      ],
+      "display_name": "Wordpress Tests Database Name"
+    },
+    "wordpress_tests/project_wptests_path": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "wordpress_tests::instrument_project"
+      ],
+      "display_name": "Path (relative to wordpress_tests/project_path) to the Wordpress tests"
+    },
+    "wordpress_tests/project_path": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "wordpress_tests::instrument_project"
+      ],
+      "display_name": "Wordpress plugin project path"
+    },
+    "wordpress_tests/dbcollate": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "wordpress_tests::instrument_project"
+      ],
+      "display_name": "Wordpress Tests Database Collate setting"
+    },
+    "wordpress_tests/dbpass": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "wordpress_tests::instrument_project"
+      ],
+      "display_name": "Wordpress Tests Database User Password"
+    },
+    "wordpress_tests/plugin_name": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "wordpress_tests::instrument_project"
+      ],
+      "display_name": "Wordpress Plugin name"
+    },
+    "wordpress_tests/dbcharset": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "default": "utf8",
+      "type": "string",
+      "recipes": [
+        "wordpress_tests::instrument_project"
+      ],
+      "display_name": "Wordpress Tests Database Charset"
+    },
+    "wordpress_tests/dbhost": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "default": "localhost",
+      "type": "string",
+      "recipes": [
+        "wordpress_tests::instrument_project"
+      ],
+      "display_name": "Wordpress Tests Database Host"
+    },
+    "wordpress_tests/dbuser": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "wordpress_tests::instrument_project"
+      ],
+      "display_name": "Wordpress Tests Database Username"
+    }
+  },
+  "license": "Apache v2.0",
+  "suggestions": {
+  },
+  "platforms": {
+    "osx": ">= 0.0.0"
+  },
+  "maintainer": "Ryan J. Geyer",
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
+  "version": "0.0.1",
+  "recommendations": {
+  },
+  "recipes": {
+    "wordpress_tests::instrument_project": "Sets up a wordpress plugin directory to be integration testable using the wordpress-tests from http://codex.wordpress.org/Automated_Testing",
+    "wordpress_tests::create_symlinks": "Creates some symlinks to make the tests work.  This is seperate because you may want to ignore some of the content under 'wordpress-tests' so your IDE doesn't go into convulsions"
+  },
+  "groupings": {
+  },
+  "conflicting": {
+  },
+  "replacing": {
+  },
+  "description": "Installs/Configures wordpress_tests",
+  "providing": {
+  }
+}

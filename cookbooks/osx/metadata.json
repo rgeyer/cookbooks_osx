@@ -15,8 +15,8 @@
         "osx::do_enable_root",
         "osx::do_disable_root"
       ],
-      "display_name": "OSX Admin User",
-      "description": "The username of a user with administrative privileges"
+      "description": "The username of a user with administrative privileges",
+      "display_name": "OSX Admin User"
     },
     "osx/ls_colors": {
       "required": "optional",
@@ -29,8 +29,8 @@
       "recipes": [
         "osx::setup_colored_ls"
       ],
-      "display_name": "LSCOLORS Code",
-      "description": "The ls colors code.  You can generate your favorite with something like this http://geoff.greer.fm/lscolors/"
+      "description": "The ls colors code.  You can generate your favorite with something like this http://geoff.greer.fm/lscolors/",
+      "display_name": "LSCOLORS Code"
     },
     "osx/admin_pass": {
       "required": "required",
@@ -43,8 +43,8 @@
         "osx::do_enable_root",
         "osx::do_disable_root"
       ],
-      "display_name": "OSX Admin Password",
-      "description": "The password of a user with administrative privileges"
+      "description": "The password of a user with administrative privileges",
+      "display_name": "OSX Admin Password"
     },
     "osx/root_password": {
       "required": "required",
@@ -56,8 +56,8 @@
       "recipes": [
         "osx::do_enable_root"
       ],
-      "display_name": "OSX Root Password",
-      "description": "The password you want to assign to the root account"
+      "description": "The password you want to assign to the root account",
+      "display_name": "OSX Root Password"
     }
   },
   "license": "All rights reserved",

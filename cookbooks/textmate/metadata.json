@@ -17,8 +17,8 @@
         "textmate::install_bundles",
         "textmate::default"
       ],
-      "display_name": "Textmate Bundle Repos",
-      "description": "A json hash of git repositories to checkout as Textmate bundles.  In the form {'<dirname>', '<repo_uri>'}, I.E. {'Ack.tmbundle', 'git://github.com/protocol/ack-tmbundle.git'}"
+      "description": "A json hash of git repositories to checkout as Textmate bundles.  In the form {'<dirname>', '<repo_uri>'}, I.E. {'Ack.tmbundle', 'git://github.com/protocol/ack-tmbundle.git'}",
+      "display_name": "Textmate Bundle Repos"
     }
   },
   "license": "All rights reserved",

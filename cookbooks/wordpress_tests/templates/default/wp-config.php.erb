@@ -17,7 +17,7 @@ define ('WPLANG', '');
 
 // uncomment and change this if you'd like to load plugins from a particular directory prior to testing
 define('DIR_TESTPLUGINS', '<%= node[:wordpress_tests][:project_path] %>');
-define('DIR_TESTDATA', '::File.join(node[:wordpress_tests][:project_path], "wordpress-tests", "wp-testdata") %>');
+define('DIR_TESTDATA', '<%= ::File.join(node[:wordpress_tests][:project_path], "wordpress-tests", "wp-testdata") %>');
 
 // Overwrite the ABSPATH for testing purposes, this is so that all of your include & require statements work in the test environment
 define('ABSPATH', '<%= ::File.join(node[:wordpress_tests][:project_path], "wordpress-tests", "wordpress") %>/');
