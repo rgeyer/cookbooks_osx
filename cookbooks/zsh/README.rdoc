@@ -1,0 +1,12 @@
+= DESCRIPTION:
+
+= REQUIREMENTS:
+
+= ATTRIBUTES:
+
+= USAGE:
+
+When running do_set_as_user_default be sure you do so as sudo, since it needs to muck around with protected files, and run
+commands as other users.
+
+  sudo -E chef-solo -c solo.rb -j zsh.json
